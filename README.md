@@ -22,7 +22,7 @@ pod 'Loger'
 
 ## Author
 
-Patryk Mieszała, patryk.mieszala@programisci.eu
+Patryk Mieszała, patryk.mieszala@gmail.com
 
 ## License
 

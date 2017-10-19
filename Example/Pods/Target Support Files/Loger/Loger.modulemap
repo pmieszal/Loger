@@ -1,0 +1,6 @@
+framework module Loger {
+  umbrella header "Loger-umbrella.h"
+
+  export *
+  module * { export * }
+}
