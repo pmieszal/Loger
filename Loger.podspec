@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 Loger is simplified logging framework written in pure Swift. All you need to do, is define `LogLevel`, formatting and endpoint (simple `print`, or whatever you want).
                        DESC
 
-  s.homepage         = 'https://github.com/Patryk Mieszała/Loger'
+  s.homepage         = 'https://github.com/pmieszal/Loger'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Patryk Mieszała' => 'patryk.mieszala@programisci.eu' }
-  s.source           = { :git => 'https://github.com/Patryk Mieszała/Loger.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/pmieszal/Loger.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'

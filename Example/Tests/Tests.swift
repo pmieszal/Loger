@@ -1,6 +1,6 @@
 import UIKit
 import XCTest
-import Loger
+//import Loger
 
 class Tests: XCTestCase {
     
