@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Loger
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        Loger(logLevel: .debug, format: Loger.LogEntryDefaultFormat, endpoint: Loger.LogOutputDefaultEndpoint).log("app launch", level: .debug, file: #file, function: #function, line: #line)
         return true
     }
 

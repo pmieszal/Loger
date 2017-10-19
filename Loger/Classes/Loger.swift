@@ -33,9 +33,9 @@ public enum LogLevel: Int, CustomStringConvertible {
 public typealias LogEntryFormat = (LogEntry) -> String
 public typealias LogOutputEndpoint = (LogOutput) -> Void
 
-class Loger {
+public class Loger {
     
-    static var LogEntryDefaultFormat: LogEntryFormat = { entry -> String in
+    public static var LogEntryDefaultFormat: LogEntryFormat = { entry -> String in
         let date: Date = Date()
         
         let df = DateFormatter()
@@ -48,7 +48,7 @@ class Loger {
         return "(\(time)) \(filename).\(entry.function)[\(entry.line)] \(entry.level.description.uppercased()) - \(entry.value)\n"
     }
     
-    static var LogOutputDefaultEndpoint: LogOutputEndpoint = { (output) in
+    public static var LogOutputDefaultEndpoint: LogOutputEndpoint = { (output) in
         print(output.message, terminator: output.terminator)
     }
     
@@ -56,7 +56,7 @@ class Loger {
     private let format: LogEntryFormat
     private let endpoint: LogOutputEndpoint
     
-    init(logLevel: LogLevel, format: @escaping LogEntryFormat, endpoint: @escaping LogOutputEndpoint) {
+    public init(logLevel: LogLevel, format: @escaping LogEntryFormat, endpoint: @escaping LogOutputEndpoint) {
         self.minimumLogLevel = logLevel
         self.format = format
         self.endpoint = endpoint
@@ -69,7 +69,7 @@ class Loger {
         endpoint(output)
     }
     
-    @inline(__always) func log<T>(_ value: T, level: LogLevel, terminator: String = "", file: String, function: String, line: Int) {
+    public func log<T>(_ value: T, level: LogLevel, terminator: String = "", file: String, function: String, line: Int) {
         guard level.shouldLog(consideringMinimum: self.minimumLogLevel) == true else { return }
         let entry = LogEntry(value: value, level: level, file: file, function: function, line: line)
         let message = format(entry)
@@ -81,17 +81,17 @@ class Loger {
 
 public struct LogEntry {
     
-    let value: Any
-    let level: LogLevel
-    let file: String
-    let function: String
-    let line: Int
+    public let value: Any
+    public let level: LogLevel
+    public let file: String
+    public let function: String
+    public let line: Int
     
 }
 
 public struct LogOutput {
     
-    let message: String
-    let terminator: String
+    public let message: String
+    public let terminator: String
     
 }
