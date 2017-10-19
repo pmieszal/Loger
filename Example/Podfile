@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'Loger_Example' do
+  pod 'Loger', :path => '../'
+
+  target 'Loger_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
