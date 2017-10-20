@@ -1,5 +1,5 @@
 PODS:
-  - Loger (0.1.0)
+  - Loger (0.2.0)
 
 DEPENDENCIES:
   - Loger (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  Loger: 47d7720b1b84d61a0850ab9335cd5f9d59e38b3d
+  Loger: 5a1ab392f1c92da08b15d0f7a73c125bec45e5b5
 
 PODFILE CHECKSUM: b67f5ed33b5c6a4c7597d7c7a4a8c6750e23d3cc
 

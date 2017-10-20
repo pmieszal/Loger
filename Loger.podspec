@@ -30,7 +30,7 @@ Loger is simplified logging framework written in pure Swift. All you need to do,
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'Loger/**/*'
+  s.source_files = 'Loger/Classes/**/*'
   
   # s.resource_bundles = {
   #   'Loger' => ['Loger/Assets/*.png']

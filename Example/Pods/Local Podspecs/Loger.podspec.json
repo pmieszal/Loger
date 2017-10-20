@@ -1,6 +1,6 @@
 {
   "name": "Loger",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "summary": "Loger is simple logging framework written in Swift",
   "description": "Loger is simplified logging framework written in pure Swift. All you need to do, is define `LogLevel`, formatting and endpoint (simple `print`, or whatever you want).",
   "homepage": "https://github.com/pmieszal/Loger",
@@ -9,11 +9,11 @@
     "file": "LICENSE"
   },
   "authors": {
-    "Patryk Mieszała": "patryk.mieszala@programisci.eu"
+    "Patryk Mieszała": "patryk.mieszala@gmail.com"
   },
   "source": {
     "git": "https://github.com/pmieszal/Loger.git",
-    "tag": "0.1.0"
+    "tag": "0.2.0"
   },
   "platforms": {
     "ios": "8.0"
