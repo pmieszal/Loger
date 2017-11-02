@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Loger'
-  s.version          = '0.2.1'
+  s.version          = '0.2.2'
   s.summary          = 'Loger is simple logging framework written in Swift'
 
 # This description is used to generate tags and improve search results.
@@ -29,6 +29,7 @@ Loger is simplified logging framework written in pure Swift. All you need to do,
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
+  s.osx.deployment_target = '10.12'
 
   s.source_files = 'Loger/Classes/**/*'
   
